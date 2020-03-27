@@ -2051,7 +2051,7 @@ var UnityLoader = UnityLoader || {
             }()
         }
     }(),
- compatibilityCheck: function(e, t, r) {
+	compatibilityCheck: function(e, t, r) {
          t();
      },
     buildCompatibilityCheck: function(e, t, r) {
