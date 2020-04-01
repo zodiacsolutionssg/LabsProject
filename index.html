@@ -13,8 +13,28 @@
 		<script>
 			var unityInstance = UnityLoader.instantiate("gameContainer", "Build/new.json", {onProgress: UnityProgress});
 		</script>
+		<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+		  background-image: url('StreamingAssets/background.jpg'); 
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 	</head>
 	<body>
+<div class="bg"></div>
 		<div class="content">
 			<div class="webgl-content" id="unityPlayer">
 				<div id="gameContainer" style="width: 960px; height: 600px"></div>
